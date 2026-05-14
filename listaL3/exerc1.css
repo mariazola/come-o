@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+body {
+    margin: 0;
+    font-family: lato;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    border-bottom: 1px solid #4F0010;
+    margin-bottom: 40px;
+    background-color: rgba(237, 158, 174, 0.2);
+    text-shadow: 1px 1px 1px #fff;
+}
+
+fieldset {
+    width: 40%;
+    border: 1px solid #4F0010;
+    border-radius: 15px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(237, 158, 174, 0.1);
+    box-shadow: 5px 5px 5px #4F0010;
+}
+
+label.alinha {
+    width: 200px;
+    display: inline-block;
+    /*para que o elemene aceite o width*/
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+    /*para o vermelho ficar mais carregado*/
+}
+
+input[name="nome"],
+input[name="email"] {
+    width: 300px;
+}
+
+input[name="data"],
+input[name="senha"],
+input[name="login"] {
+    width: 200px;
+}
+
+input {
+    font-family: "Open Sans";
+}
+
+button {
+    font-family: "Open sans";
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+/*Note, abaixo, o uso da div para permitir a centralização do botões sem usar display block*/
+div {
+    margin-top: 20px;
+    text-align: center;
+}

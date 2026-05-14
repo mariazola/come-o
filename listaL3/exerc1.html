@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 01</title>
+    <link rel="stylesheet" href="exerc1.css">
+</head>
+
+<body>
+    <h1>Formulários - coleta de informações pessoais</h1>
+    <form action="receber-dados.php" method="post">
+        <fieldset>
+            <legend>informações pessoais</legend>
+
+            <label class="alinha">Nome completo: </label>
+
+            <input type="text" name="nome" autofocus> <br>
+
+            <label class="alinha">Email: </label>
+            <input type="email" name="email"> <br>
+
+            <label class="alinha">Data de nascimento</label>
+            <input type="date" name="data"> <br>
+
+            <label class="alinha">Login: </label>
+            <input type="text" name="login"> <span>*</span> <br>
+
+            <label class="alinha">Senha: </label>
+            <input type="password" name="senha"> <span>*</span> <br>
+
+            <label class="alinha">Estado: </label>
+            <select name="estado">
+                <option>Santa Catarina</option>
+                <option>Paraná</option>
+                <option>Rio Grande do Sul</option>
+            </select> <br> <br>
+
+            <label>Faixa etária: </label><br>
+            <!--Nos 2 input os valores do name não precisa ser o mesmo, senão ele vai selecionar as dua opções ao mesmo tempo-->
+            <input type="radio" name="idade" value="1"> <label>Menor ou igual a 18 anos</label> <br>
+            <input type="radio" name="idade" value="2" checked> <label>Maior de idade</label>
+        </fieldset>
+
+        <div>
+            <button type="resetS">Limpar formulário</button><!--Este tipo de botão
+            que serve para eliminar o que o usuário já cadastrou já está em desuso-->
+            <button type="submit">Efetuar cadastro</button>
+        </div>
+    </form>
+</body>
+
+</html>
