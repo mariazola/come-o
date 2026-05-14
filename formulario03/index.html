@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário03</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Formulários - publicação de artigos</h1>
+
+    <form action="enviar-dados.php" method="post">
+        <fieldset>
+            <legend>Artigo</legend>
+            <label class="alinha">Título: </label>
+            <input type="text" name="titulo" autofocus> <br>
+
+            <label class="alinha">Data da publicação: </label>
+            <input type="date" name="data-da-publicacao"> <br>
+
+            <label class="alinha">Palavras-chaves do artigo: </label>
+            <textarea id=""></textarea> <br>
+
+            <label class="">Enviar artigo (formato.pdf, máximo 50KB)</label>
+            <input type="file">
+        </fieldset>
+        <button>Enviar artigo</button>
+    </form>
+
+</body>
+
+</html>
