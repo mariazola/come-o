@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="indo.css">
+    <title>Formulário03</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-    <h1>ESTOU A COMEÇAR</h1>
-    <div></div>
-    <h2>outras coisas é azar</h2>
-    <a class="apresentacao__links__link" href="https://instagram.com/rafaballerini">Instagram</a>
-    <a class="apresentacao__links__link" href="https://github.com/guilhermeonrails">GitHub</a>
-</div>
-</main>
-</body>
+    <h1>Formulários - publicação de artigos</h1>
+
+    <form action="enviar-dados.php" method="post">
+        <fieldset>
+            <legend>Artigo</legend>
+            <label class="alinha">Título: </label>
+            <input type="text" name="titulo"> <br>
+
+            <label class="alinha">Data da publicação: </label>
+            <input type="date" name="data-da-publicacao"> <br>
+
+            <label class="alinha">Palavras-chaves do artigo: </label>
+            <textarea id=""></textarea> <br>
+
+            <label class="alinha">Enviar artigo (formato.pdf, máximo 50KB)</label>
+            <input type="file">
+        </fieldset>
+        <button>Enviar artigo</button>
+    </form>
+    
 </body>
 </html>
