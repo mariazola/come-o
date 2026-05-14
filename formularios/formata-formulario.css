@@ -1,0 +1,68 @@
+/*Site para pegar paleta de cores: https://paletton.com/#uid=12m0u0kkykhaMuqg3oVpcfMuGaw*/
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Fjalla One";
+
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    background-color: #033F10;
+    color: aliceblue;
+    box-shadow: 0 0 5px 5px #214128;
+    /*Sombra para cada lado*/
+    margin-bottom: 30px;
+}
+
+fieldset {
+    width: 30%;
+    margin: 20px auto;
+    /*Significa que vai colocae espaçamento em cima e embaixo de cada elemento fieldset e
+    o AUTO vai centralizar porque vai colocar o mesmo espaçamebto tanto para direita, como na esquerda */
+    border-radius: 10px;
+    /*Para erredondar os cantos dos quadrados*/
+    background-color: rgba(149, 204, 135, 0.2);
+    /*0.2 significa que são 20% de opacidade e 80% de transparência*/
+    box-shadow: 0 0 5px 5px #114603;
+
+}
+
+/*CSS - avançado - Usando selectores de atributos*/
+input[ name="nome-aluno"],
+input[name="email"] {
+    width: 300px;
+}
+
+label.alinha {
+    width: 200px;
+    display: inline-block;
+    text-align: right;
+    margin-bottom: 10px;
+
+}
+
+/*O elementos inline como label, button e outros não obedecem o margin: auto; e width */
+button {
+    margin: auto;
+    /*O botão é um elemento inline e não obedece a centralização com 
+    margin auto. Vamos convertê-lo para o elemento npivel de blovo*/
+    display: block;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input,
+button,
+select {
+    font-family: "fjalla one";
+}
+
+span {
+    color: red;
+}

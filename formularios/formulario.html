@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="formata-formulario.css">
+</head>
+<body>
+    
+    <h1> IFSC - CTDS - DADOS CADASTRAIS DOS ALUNOS</h1>
+
+    <form action="receber-dados.php" method="post">
+        <fieldset>
+            <legend>Aluno - Dados pessoais</legend>
+
+            <label class="alinha">Nome completo: </label>
+            <input type="text" name="nome-aluno" autofocus placeholder="Escreva o nome completo do aluno"><br>
+
+            <label class="alinha">E-mail: </label>
+            <input type="email" name="email" placeholder="Digite o seu email aqui"> <br>
+
+            <label class="alinha">Telefone: </label>
+            <input type="tel" name="tekefone"> <br>
+
+            <label class="alinha">Número de matrícula: </label>
+            <input type="text" name="matricula"> <br>
+
+            <label class="alinha">Login de usuário: </label>
+            <input type="text" name="Login"> <br>
+
+            <label class="alinha">Senha do usuário: </label>
+            <input type="password" name="senha">
+        </fieldset>
+
+        <fieldset>
+            <legend>Aluno - Dados Institucionais</legend>
+
+            <label>Selecione a sua fase <span>*</span>:</label>
+            
+            <!--O atributo required torna o preenchimento do controle de formulário obrigatótio-->
+            <select name="fase" required>
+                <option>Primeira fase</option>
+                <option>Segunda fase</option>
+                <option>Terceira fase</option>
+            </select> <br> <br>
+
+            <label>Número de aulas semanais: </label> <br>
+            <input type="radio" name="numero-aulas-semanais" value="1"> <label>Menos de 20 horas</label>
+            <input type="radio" name="numero-aulas-semanais" value="2"> <label>Exatamente 20 aulas</label>
+            <input type="radio" name="numero-aulas-semanais" value="3"> <label>Mais de 20 aulas</label> <br> <br>
+
+            <label>Proficiência nas seguintes linguagens de programação: </label> <br>
+
+            <input type="checkbox" name="linguagens[]" value="1"> <label>PHP</label>
+            <br>
+
+            <input type="checkbox" name="linguagens[]" value="2"><label>Java</label>
+            <br>
+
+            <input type="checkbox" name="linguagens[]" value="3"><label>Python</label>
+        </fieldset>
+        <button>Cadastrar Dados</button>
+    </form>
+</body>
+</html>
