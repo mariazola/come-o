@@ -1,0 +1,42 @@
+/*link da paleta de cores: https://colorhunt.co/palette/091413285a48408a71b0e4cc*/
+/*as cores: https://www.homehost.com.br/blog/tutoriais/tabela-de-cores-html/*/
+
+table {
+    border: 1px solid #091413;
+    /*Controlando os espaços entre as células*/
+    border-spacing: 1px;
+    /*Outra forma de retirar espaços entre células*/
+    border-collapse: collapse;
+    width: 450px;
+    height: 300px;
+    background-color: #B0E4CC;
+    color: #285A48;
+    /*sombra*/
+    box-shadow: 10px 10px 15px rgb(9, 20, 19);
+
+    /*Centralizar */
+    margin: 25px auto;
+
+}
+caption {
+    color: black;
+}
+
+
+th,td {
+    border: 1px solid #091413;
+}
+
+td {
+    text-align: center;
+    color: #408A71;
+
+}
+
+body{
+    background-color: rgba(176, 228, 204, 30%);
+}
+
+p,h1 {
+    text-align: center;
+}
