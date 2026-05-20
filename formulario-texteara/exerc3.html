@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario03</title>
+    <link rel="stylesheet" href="exerc3.css">
+</head>
+<body>
+    <h1>Formulários - publicação de artigos</h1>
+
+    <form action="receber-dados.php" method="post" enctype="application/x-www-form-urlencoded">
+        <fieldset>
+            <legend>Artigo</legend>
+
+            <label class="alinha">Título: </label>
+            <input type="text" name="titulo"><br>
+
+            <label class="alinha">Data da publicação: </label>
+            <input type="date" name="data"> <br>
+
+            <label class="alinha">Palavras-chave do artigo: </label>
+            <textarea name="Palavras-chave" placeholder="Escreva, aqui os termos mais importantes de seu artigo"></textarea><br>
+            
+            <!--Observa, a seguir, o uso da tag correta para upload de arquivos ao servidor-->
+            <label>Enviar artido (formato .pdf, máximo 50KB): </label>
+            <!--O atributo  ACCEPT serve para definir o formato de arquivo que o navegador deve aceitar ou receber-->
+            <input type="file" name="artigo" accept=".pdf">
+        </fieldset>
+        <button>Enviar artigo</button>
+    </form>
+</body>
+</html>

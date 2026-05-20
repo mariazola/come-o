@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+body {
+    font-family: Play;
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    border-bottom: 1px solid #F2EDC2;
+    background: #346739;
+    box-shadow: 0 0 5px 5px #79AE6F;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+fieldset {
+    width: 35%;
+    padding-left: 30px;
+    border-radius: 20px;
+    margin: 30px auto;
+    background: rgb(242, 237, 194, 0.2);
+}
+
+label.alinha {
+    width: 350px;
+    text-align: right;
+    display: inline-block;
+    margin-bottom: 15px;
+
+}
+
+input, textarea, button {
+    font-family: Play;
+}
+
+textarea {
+    height: 100px;
+    width: 200px;
+    /*desativar a alça de redimensionamento*/
+    resize: none;
+    vertical-align: top;
+    margin-bottom: 20px;
+}
+
+button {
+    display: block;
+    margin: auto;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid #F2EDC2;
+    background: #79AE6F;
+}
